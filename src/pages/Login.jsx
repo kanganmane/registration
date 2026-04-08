@@ -7,13 +7,13 @@ const Login = (props) => {
   let isLoggedIn = props.isLoggedIn;
   let setLoggedIn = props.setLoggedIn;
   return (
-    <div className='bg-[#161616] w-full h-full flex justify-center items-center'>
-      <div className='h-125 w-100 bg-white/5 backdrop-blur-lg border-2 border-white/5 p-10 rounded-2xl flex flex-col gap-6 justify-between '>
+    <div className='bg-[#f2f2f2] w-full h-full flex justify-center items-center'>
+      <div className='h-125 w-100 bg-gray-700/5 backdrop-blur-lg border-2 border-white/5 p-10 rounded-2xl flex flex-col gap-6 justify-between '>
           <h1 className='text-2xl'>Welcome Back!
           <p className='text-lg text-gray-400'>Log in to continue.</p></h1>
           <form className='flex flex-col gap-3'>
-            <label for='useremail'>Enter email<span className='text-red-500'>*</span><input id='useremail' name='useremail' className='h-8 w-full bg-black/50 rounded-md' /></label>
-            <label for='userpass'>Enter password<span className='text-red-500'>*</span><input id='userpass' name='userpass' className='h-8 w-full bg-black/50 rounded-md' /></label>
+            <label for='useremail'>Enter email<span className='text-red-500'>*</span><input id='useremail' type='email' name='useremail' className='h-8 w-full bg-white rounded-md' /></label>
+            <label for='userpass'>Enter password<span className='text-red-500'>*</span><input id='userpass' type='password' name='userpass' className='h-8 w-full bg-white rounded-md' /></label>
           </form>
           <div className='gap-2 flex flex-col'>
           <div className='flex flex-row items-center justify-around'>

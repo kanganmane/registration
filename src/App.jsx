@@ -8,7 +8,7 @@ import Home from './pages/Home'
 const App = () => {
   const [isLoggedIn,setLoggedIn] = useState(false);
   return (
-    <div className='w-screen h-screen flex flex-col font-mono text-white'>
+    <div className='w-screen h-screen flex flex-col font-mono text-black'>
       <Navbar isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
       <Routes>
         <Route path='/' element={<Home/>} />
